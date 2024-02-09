@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <!-- Icono de la página web -->
+    <link rel="icon" type="image/x-icon" href="css/foto_persona.png">
+    <!-- Open graph data -->
+    <meta property="og:title" content="Currículum Vitae de Apellido y Nombre" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="css/foto_persona.png" />
+    <meta property="og:description" content="Proyecto final - Argentina Programa" />
+    <!-- Aplica estilos y agrega iconos-->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/iconos.css">
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="page">
+    <header id="header">
+        <div id="barra_superior">
+            <p id="curriculum_vitae">Currículum Vitae</p>
+            <div id="google_traductor"></div>
+        </div>
+        <div id="bloque_foto_nombre" class="bloque_img_text">
+            <div id="bloque_foto_header">
+                <img id="foto_header" class="foto" src="css/foto_persona.png" alt="Foto de Apellido y Nombre">
+                <div id="modal_header" class="modal">
+                    <span class="cerrar">&times;</span>
+                    <img id="foto_grande_header" class="contenido_modal">
+                </div>
+            </div>
+            <h1 id="nombre">Apellido y Nombre</h1>
+        </div>
+    </header>
+
+    <div class="fila">
+
+        <!-- DATOS PERSONALES -->
+        <section class="columna-1">
+            <div id="datos_personales">
+                <div id="bloque_menu" class="bloque_img_text">
+                    <button id="boton_menu" class="boton_cuadrado">
+                        <span id="icono_menu" class="icon-menu"></span>
+                        <h2 id="texto_menu">Datos personales</h2>
+                    </button>
+                </div>
+                <div id="datos_ocultables">
+                    <div id="bloque_foto_datos">
+                        <img id="foto_datos" class="foto" src="css/foto_persona.png" alt="Foto de Apellido y Nombre">
+                        <div id="modal_datos" class="modal">
+                            <img id="foto_grande_datos" class="contenido_modal">
+                        </div> 
+                    </div>
+                    <div id="lista_datos">
+                        <h2 id="titulo_datos">Datos personales</h2>
+                        <h3>Edad</h3>
+                        <p>11</p>
+                        <h3>DNI</h3>
+                        <p>11.111.111</p>
+                        <h3>Fecha de nacimiento</h3>
+                        <p>11/11/1111</p>
+                        <h3>Estado Civil</h3>
+                        <p>Alguno</p>
+                        <h3>Lugar de residencia</h3>
+                        <p>Ciudad, calle 1234</p>
+                        <h3>Contacto</h3>
+                        <p>Teléfono: 111 1 111111</p>
+                        <p><a href="mailto:algo@algo.algo" target="_blank" rel="noopener noreferrer">e-mail</a></p>
+                        <p><a href="https://ar.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INFORMACION PERSONAL -->
+        <section id="informacion_personal" class="columna-2">
+                
+            <!-- Bloque 1 -->
+            <div class="bloque_info">
+                <div id="titulo_bloque_1" class="bloque_img_text titulo_bloque_info">
+                    <button id="boton_info_1">
+                        <span id="icono_info_1" class="icon-menos"></span>
+                    </button>
+                    <h2>Formación académica</h2>
+                </div>
+                <div id="subtitulos_info_1" class="subtitulos">
+                    <h3>Estudio de grado</h3>
+                    <p>(Fecha) Institución</p>
+                    <h3>Estudio de pregrado</h3>
+                    <p>(Fecha) Institución</p>
+                </div>
+            </div>
+
+            <!-- Bloque 2 -->
+            <div class="bloque_info">
+                <div id="titulo_bloque_2" class="bloque_img_text titulo_bloque_info">
+                    <button id="boton_info_2">
+                        <span id="icono_info_2" class="icon-menos"></span>
+                    </button>
+                    <h2>Formación adicional</h2>
+                </div>
+                <div id="subtitulos_info_2" class="subtitulos">
+                    <h3>Certificación obtenida</h3>
+                    <p>(Fecha) Institución</p>
+                    <h3>Certificación obtenida</h3>
+                    <p>(Fecha) Institución</p>
+                    <h3>Certificación obtenida</h3>
+                    <p>(Fecha) Institución</p>
+                </div>
+            </div>
+
+            <!-- Bloque 3 -->
+            <div class="bloque_info">
+                <div id="titulo_bloque_3" class="bloque_img_text titulo_bloque_info">
+                    <button id="boton_info_3">
+                        <span id="icono_info_3" class="icon-menos"></span>
+                    </button>
+                    <h2>Experiencia laboral</h2>
+                </div>
+                <div id="subtitulos_info_3" class="subtitulos">
+                    <h3>Puesto de trabajo</h3>
+                    <p>(Fecha) Empresa</p>
+                    <h3>Puesto de trabajo</h3>
+                    <p>(Fecha) Empresa</p>
+                </div>
+            </div>
+            
+            <!-- Bloque 4 -->
+            <div class="bloque_info">
+                <div id="titulo_bloque_4" class="bloque_img_text titulo_bloque_info">
+                    <button id="boton_info_4">
+                        <span id="icono_info_4" class="icon-menos"></span>
+                    </button>
+                    <h2>Información complementaria</h2>
+                </div>
+                <div id="subtitulos_info_4" class="subtitulos">
+                    <h3>Datos importantes</h3>
+                    <p>Información</p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <footer id="footer">
+        <div id="links_footer" class="bloque_img_text">
+            <!-- Plantilla aún sin terminar 
+            <p><a id="link_plantilla" href="https://github.com/Andeath1/CVProyecto" target="_blank" rel="noopener noreferrer">Usar Plantilla</a></p>
+            -->
+            <button id="boton_github" class="boton_cuadrado">
+                <span class="icon-github"></span>
+            </button>
+            <button id="boton_tema" class="boton_cuadrado">
+                <span class="icon-tema" ></span>
+            </button>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="traductor.js"></script>
+</div>
+</body>
+</html>

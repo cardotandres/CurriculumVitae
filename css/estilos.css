@@ -1,0 +1,339 @@
+/* ---------- ESTILOS GENERALES ---------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', sans-serif;
+}
+.tema_oscuro {
+    --fondo-oscuro: #222831;
+    --fondo-titulo: #393E46;
+    --fondo-color: #2E4F4F;
+    --fondo-claro: #252A34;
+    --titulo-principal: #FF2E63;
+    --titulo-secundario: #00ADB5;
+    --texto-base: #CBE4DE;
+    --texto-links: #FF2E63;
+}
+.tema_claro {
+    --fondo-oscuro: #ffffff;
+    --fondo-titulo: #222831;
+    --fondo-color: #2E4F4F;
+    --fondo-claro: #222831;
+    --titulo-principal: #FF2E63;
+    --titulo-secundario: #00ADB5;
+    --texto-base: #CBE4DE;
+    --texto-links: #FF2E63;
+}
+/* Tema claro alternativo
+.tema_claro {
+    --fondo-oscuro: #f8f6c7;
+    --fondo-titulo: #4a2864;
+    --fondo-color: #835ca1;
+    --fondo-claro: #ffffff;
+    --titulo-principal: #FFF430;
+    --titulo-secundario: #e287de;
+    --texto-base: #000000;
+    --texto-links: #FFF430;
+} */
+#page {
+    position: relative;
+    min-height: 100vh;
+}
+body {
+    background: var(--fondo-oscuro);
+}
+header {
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 10px 10px 0 var(--fondo-claro);
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+.fila {
+    display: grid;
+    padding: 0 0 45px 0;
+}
+.fila::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+}
+
+/* ---------- ESTILOS INDIVIDUALES ---------- */
+/* Clase oculto */
+.oculto {
+    display: none;
+}
+/* Fuentes, links y botones */
+p {
+    font-style: italic;
+    font-weight: 500;
+}
+a {
+    color: var(--texto-links);
+    cursor: pointer;
+    transition: 0.4s;
+}
+a:visited {
+    color: var(--texto-links);
+    text-decoration: none;
+}
+a:hover, button:hover {
+    opacity: 0.8;
+}
+button {
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: inherit;
+    color: var(--titulo-secundario);
+    transition: 0.2s;
+}
+.boton_cuadrado {
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    color: var(--texto-links);
+}
+.boton_cuadrado:hover {
+    scale: 1.1;
+    box-shadow: 0 10px 10px 0 var(--fondo-claro);
+}
+/* Bloques con imágenes y texto */
+.bloque_img_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+/* Fotos */
+.foto {
+    border-radius: 100%;
+    padding: 16px;
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.foto:hover {
+    opacity: 0.7;
+    scale: 1.2;
+}
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 2;
+    padding-top: 5%; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgba(0,0,0,0.9); 
+}
+.contenido_modal {
+    margin: auto;
+    display: block;
+    max-width: calc(100% - 10px);
+    height: auto;
+    border-radius: 20%;
+}
+.contenido_modal {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.cerrar:hover, .cerrar:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ----- HEADER ----- */
+#header {
+    background: var(--fondo-titulo);
+    color: var(--titulo-secundario);
+}
+
+/* Barra superior */
+#barra_superior {
+    display: flex;
+    margin-top: 8px;
+}
+#curriculum_vitae {
+    text-align: left;
+    font-weight: 400;
+    margin: 0 0 0 16px;
+}
+#google_traductor {
+    margin: 0 16px 0 auto;
+}
+
+/* Bloque foto y nombre */
+#nombre {
+    color: var(--titulo-principal);
+    padding: 0 0 10px 10px;
+}
+
+/* ----- SECCION DATOS PERSONALES ----- */
+.columna-1 {
+    position: relative;
+    top: -20px;
+    margin-bottom: 10px;
+}
+#datos_personales {
+    border-radius: 0 0px 10px 10px;
+    box-shadow: 0 10px 10px 0 var(--fondo-claro);
+    background-color: var(--fondo-color);
+    color: var(--texto-base);
+    padding: 20px 0 5px 0;
+}
+#datos_personales h2 {
+    text-decoration: underline;
+    color: var(--texto-links);
+}
+#bloque_menu, #datos_ocultables {
+    overflow: visible;
+    text-align: center;
+}
+#texto_menu {
+    padding-left: 10px;
+}
+#lista_datos {
+    padding-bottom: 10px;
+}
+#lista_datos > h3 {
+    padding-top: 8px;
+}
+
+/* ----- INFORMACION PERSONAL ----- */
+#informacion_personal {
+    color: var(--titulo-secundario);
+    padding: 0 10px;
+}
+.bloque_info :is(h2, p) {
+    padding-left: 10px;
+}
+.bloque_info :is(h3,p){
+    color: var(--texto-base);
+}
+.bloque_info h3 {
+    padding: 10px 20px 10px 20px;
+}
+.titulo_bloque_info {
+    justify-content: initial;
+    align-items: initial;
+}
+.subtitulos {
+    background-color: var(--fondo-claro);
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+/* ----- FOOTER ----- */
+#footer {
+    border-radius: 0 10px 0 0;
+    background-color: var(--fondo-color);
+}
+#links_footer {
+    justify-content: end;
+}
+
+/* ----- COLUMNAS RESPONSIVAS ----- */
+/* Dispositivos chicos */
+/* [class*="col-"] {
+    width: 100%;
+    float: left;
+} */
+#bloque_foto_header, #titulo_datos {
+    display: none;
+}
+
+/* Dispositivos grandes */
+@media only screen and (min-width: 768px) {
+/*    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+*/
+    body {
+        background: var(--fondo-oscuro);
+    }
+    .fila {
+        background-color: inherit;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    .columna-1 {
+        grid-column: 1;
+        grid-row: 1;
+        position: static;
+    }
+    .columna-2 {
+        grid-column: 2 / 5;
+    }
+
+    /* ----- HEADER ----- */
+    #header {
+        border-radius: 0 0 0 10px;
+        margin-bottom: 15px;
+    }
+    #bloque_foto_header {
+        display: inherit;
+    }
+    #nombre {
+        padding: 0 0 0 10px;
+    }
+
+    /* ----- DATOS PERSONALES ----- */
+    #datos_personales {
+        position: fixed;
+        width: 24vw;
+        z-index: -1;
+        border-radius: 0 10px 10px 10px;
+        padding: 0 0 5px 0;
+    }
+    #datos_personales h2 {
+        text-decoration: underline;
+        color: var(--titulo-secundario);
+    }
+    #datos_ocultables, #titulo_datos {
+        display: block;
+        padding: 10px;
+    }
+    #bloque_menu, #bloque_foto_datos {
+        display: none;
+    }
+}
