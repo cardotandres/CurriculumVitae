@@ -1,13 +1,11 @@
 ESP
-¡Hola! Gracias por haber llegado hasta acá y por estar leyendo este archivo.
-Te invito a que explores todo el código y me des un feedback si tenés ganas, este es mi primer proyecto publicado así que aprecio toda sugerencia.
-Pronto estaré subiendo algunos proyectos viejos y los actualizaré, así que también te invito a mirarlos si es que subí alguno.
-Aunque actualmente estoy trabajando en la función "Usar plantilla" de este mismo proyecto para que puedas personalizar la página para mostrar un currículum personalizado.
+¡Hola! Gracias interesarte en este proyecto, aunque aún lo sigo desarrollando, está en una etapa avanzada.
+Considero este, como la evolución del "ProyectoCV" que podés encontrar en mis repositorios. Gradualmente estoy trabajando para hacerlo mejor y darle realmente mi sello. Además deseo finalizarlo para utilizarlo con mis datos reales como presentación personal.
+Por hacer: arreglar sombras, agregar botón para imprimir, revisar funcionamiento de botones +/-.
 Saludos, Andeath.
 
 ENG
-¡Hi! Thanks for came here and be reading this file.
-I invite you to explore my code and make me some feedback if you want, this project is my first uploaded so apreciatte any suggestion.
-Soon I'll be uploading some old projects and updating it, so you're invited too to watch it if any is uploaded to the date.
-However now I'm working on this project "Use template" function to make a custom page to show your own life's page.
+¡Hi! Thanks for your interest in this project, even though I'm still developing it, it's at an advanced stage.
+I consider this as the evolution from "ProyectoCV" project that you can find in my repositories. Gradually, I'm working to make it better and truly give it my own personal touch. Also, I want to finish it to use it with my real data as a personal presentation.
+To do's: fix shadows, add a print button, review the functionality of the +/- buttons.
 Greetings, Andeath.

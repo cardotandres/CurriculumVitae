@@ -15,6 +15,7 @@
     --texto-base: #CBE4DE;
     --texto-links: #FF2E63;
 }
+/* Tema claro originalmente
 .tema_claro {
     --fondo-oscuro: #ffffff;
     --fondo-titulo: #222831;
@@ -24,8 +25,8 @@
     --titulo-secundario: #00ADB5;
     --texto-base: #CBE4DE;
     --texto-links: #FF2E63;
-}
-/* Tema claro alternativo
+} */
+/* Tema claro alternativo */
 .tema_claro {
     --fondo-oscuro: #f8f6c7;
     --fondo-titulo: #4a2864;
@@ -35,7 +36,7 @@
     --titulo-secundario: #e287de;
     --texto-base: #000000;
     --texto-links: #FFF430;
-} */
+}
 #page {
     position: relative;
     min-height: 100vh;
